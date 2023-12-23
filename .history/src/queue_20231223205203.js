@@ -52,7 +52,7 @@ class Queue {
     this.front = this.front.next;
 
     if (!this.front) {
-      this.rear = null;
+      
     }
 
     return removedValue;

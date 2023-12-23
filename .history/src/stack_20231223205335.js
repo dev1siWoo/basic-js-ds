@@ -29,10 +29,8 @@ class Stack {
   }
 
   peek() {
-    if (this.items.length === 0) {
-      return undefined;
-    }
-    return this.items[this.items.length - 1];
+    throw new NotImplementedError("Not implemented");
+    // remove line with error and write your code here
   }
 }
 

@@ -44,18 +44,8 @@ class Queue {
   }
 
   dequeue() {
-    if (!this.front) {
-      return null;
-    }
-
-    const removedValue = this.front.value;
-    this.front = this.front.next;
-
-    if (!this.front) {
-      this.rear = null;
-    }
-
-    return removedValue;
+    throw new NotImplementedError("Not implemented");
+    // remove line with error and write your code here
   }
 }
 

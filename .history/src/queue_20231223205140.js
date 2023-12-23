@@ -26,36 +26,20 @@ class Queue {
     this.front = null;
     this.rear = null;
   }
-
+  
   getUnderlyingList() {
-    return this.front;
+    throw new NotImplementedError("Not implemented");
+    // remove line with error and write your code here
   }
 
-  enqueue(value) {
-    const newNode = new ListNode(value);
-
-    if (!this.front) {
-      this.front = newNode;
-      this.rear = newNode;
-    } else {
-      this.rear.next = newNode;
-      this.rear = newNode;
-    }
+  enqueue(/* value */) {
+    throw new NotImplementedError("Not implemented");
+    // remove line with error and write your code here
   }
 
   dequeue() {
-    if (!this.front) {
-      return null;
-    }
-
-    const removedValue = this.front.value;
-    this.front = this.front.next;
-
-    if (!this.front) {
-      this.rear = null;
-    }
-
-    return removedValue;
+    throw new NotImplementedError("Not implemented");
+    // remove line with error and write your code here
   }
 }
 

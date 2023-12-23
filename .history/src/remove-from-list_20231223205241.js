@@ -22,19 +22,23 @@ const { NotImplementedError } = require('../extensions/index.js');
  *   }
  * }
  */
-function removeKFromList(l, k) {
+function removeKFromList(/* l, k */) {
   let current = l;
   let previous = null;
 
+  // Handle the case where the first node has the value k
   while (current !== null && current.value === k) {
     l = current.next;
     current = l;
   }
 
+  // Iterate through the rest of the list
   while (current !== null) {
+    // If the current node has the value k, remove it
     if (current.value === k) {
       previous.next = current.next;
     } else {
+      // Move to the next node
       previous = current;
     }
 

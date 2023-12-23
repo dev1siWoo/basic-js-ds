@@ -51,7 +51,7 @@ class Queue {
     const removedValue = this.front.value;
     this.front = this.front.next;
 
-    if (!this.front) {
+
       this.rear = null;
     }
 

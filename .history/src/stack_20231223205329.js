@@ -1,4 +1,4 @@
-const { NotImplementedError } = require("../extensions/index.js");
+const { NotImplementedError } = require('../extensions/index.js');
 
 /**
  * Implement the Stack with a given interface via array.
@@ -22,20 +22,16 @@ class Stack {
   }
 
   pop() {
-    if (this.items.length === 0) {
-      return undefined;
-    }
-    return this.items.pop();
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
   }
 
   peek() {
-    if (this.items.length === 0) {
-      return undefined;
-    }
-    return this.items[this.items.length - 1];
+    throw new NotImplementedError('Not implemented');
+    // remove line with error and write your code here
   }
 }
 
 module.exports = {
-  Stack,
+  Stack
 };

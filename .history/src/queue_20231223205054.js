@@ -14,6 +14,13 @@ const { NotImplementedError } = require("../extensions/index.js");
  * queue.getUnderlyingList() // returns { value: 3, next: null }
  */
 
+class NotImplementedError extends Error {
+  constructor(message) {
+    super(message);
+    this.name = "NotImplementedError";
+  }
+}
+
 class ListNode {
   constructor(value, next = null) {
     this.value = value;

@@ -34,6 +34,7 @@ class Stack {
     }
     return this.items[this.items.length - 1];
   }
+  }
 }
 
 module.exports = {

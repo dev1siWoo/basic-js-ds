@@ -32,9 +32,11 @@ function removeKFromList(l, k) {
   }
 
   while (current !== null) {
+    // If the current node has the value k, remove it
     if (current.value === k) {
       previous.next = current.next;
     } else {
+      // Move to the next node
       previous = current;
     }
 

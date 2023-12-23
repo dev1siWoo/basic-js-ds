@@ -35,6 +35,7 @@ function removeKFromList(l, k) {
     if (current.value === k) {
       previous.next = current.next;
     } else {
+      // Move to the next node
       previous = current;
     }
 

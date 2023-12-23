@@ -52,6 +52,7 @@ class Queue {
     this.front = this.front.next;
 
     if (!this.front) {
+      // If the queue becomes empty after dequeue, update the rear
       this.rear = null;
     }
 

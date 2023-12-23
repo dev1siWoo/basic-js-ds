@@ -31,10 +31,13 @@ function removeKFromList(l, k) {
     current = l;
   }
 
+  // Iterate through the rest of the list
   while (current !== null) {
+    // If the current node has the value k, remove it
     if (current.value === k) {
       previous.next = current.next;
     } else {
+      // Move to the next node
       previous = current;
     }
 
